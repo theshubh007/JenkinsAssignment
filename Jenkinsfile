@@ -3,9 +3,9 @@ pipeline {
     stages {
         stage('Test') {
             steps {
-                bat 'echo "Fail!" && exit /b 1'
-            }
-        }
+                bat 'echo "Success!" && exit /b 0'
+    }
+}
     }
     post {
         always {
